@@ -39,14 +39,22 @@ Ce microservice récupère sa configuration (y compris la définition des routes
 ## 🧪 Vérification
 
 -   Accédez au tableau de bord Eureka (`http://localhost:8761`) pour confirmer que la Gateway est enregistrée.
+      <img width="1807" height="965" alt="image" src="https://github.com/user-attachments/assets/0cdd3598-447d-42c8-8bbd-b4bd32695e60" />
+
 -   Testez l'accès aux microservices via la Gateway :
     -   `http://localhost:8080/commandes`
+      <img width="1284" height="910" alt="image" src="https://github.com/user-attachments/assets/14db9fcd-a863-4a75-aa60-33ddbde8ba84" />
+
     -   `http://localhost:8080/produits`
+      <img width="1269" height="901" alt="image" src="https://github.com/user-attachments/assets/1e2fb1ea-95ba-4cd9-8dee-22f95d8440e8" />
+
 -   Vérifiez le load balancing en lançant plusieurs instances de `microservice-produits` et en observant les logs lors des appels via la Gateway à `http://localhost:8080/produits`.
 
 ## 📊 Monitoring
 
 -   **Actuator Endpoints :** `http://localhost:8080/actuator` (inclut `health`, `info`)
+  <img width="678" height="597" alt="image" src="https://github.com/user-attachments/assets/fe13c89f-0854-4c59-84ce-3c29d789816c" />
+
 
 ---
 
